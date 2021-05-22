@@ -1,0 +1,680 @@
+/*
+@File: Emilono Template Styles
+
+* This file contains the styling for the actual template, this
+is the file you need to edit to change the look of the
+template.
+
+This files table contents are outlined below>>>>>
+
+*******************************************
+*******************************************
+
+** - Default CSS
+** - Preloader CSS
+** - Navbar CSS
+** - Main Banner CSS
+** - Sidebar Modal CSS
+** - Footer CSS
+*/
+/*================================================
+Default CSS
+=================================================*/
+@import url("https://fonts.googleapis.com/css?family=Hind:300,400,500,600,700&amp;display=swap");
+@import url("https://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800&amp;display=swap");
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Hind", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+a:hover, a:focus {
+  text-decoration: none;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+.d-table {
+  width: 100%;
+  height: 100%;
+}
+
+.d-table-cell {
+  vertical-align: middle;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+  color: #000000;
+}
+
+img {
+  max-width: 100%;
+}
+
+/*================================================
+Preloader CSS
+=================================================*/
+.preloader {
+  position: fixed;
+  left: 0;
+  width: 0;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  z-index: 9999999;
+  background-color: #fe8f02;
+}
+
+.preloader .spinner {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  margin: 0 auto;
+  top: 45%;
+  left: 0;
+  right: 0;
+  -webkit-transform: translateY(-45%);
+          transform: translateY(-45%);
+}
+
+.preloader .double-bounce1, .preloader .double-bounce2 {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #ffffff;
+  opacity: 0.6;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-animation: sk-bounce 2.0s infinite ease-in-out;
+          animation: sk-bounce 2.0s infinite ease-in-out;
+}
+
+.preloader .double-bounce2 {
+  -webkit-animation-delay: -1.0s;
+          animation-delay: -1.0s;
+}
+
+@-webkit-keyframes sk-bounce {
+  0%, 100% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  50% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes sk-bounce {
+  0%, 100% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  50% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+/*================================================
+Navbar CSS
+=================================================*/
+.navbar-area {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: auto;
+  z-index: 99;
+  padding-top: 30px;
+}
+
+.navbar-menu {
+  text-align: right;
+}
+
+.navbar-menu .logo {
+  text-align: left;
+}
+
+.navbar-menu .logo a {
+  display: inline-block;
+}
+
+.navbar-menu .burger-menu {
+  width: 35px;
+  height: auto;
+  background-color: transparent;
+  margin-left: auto;
+  cursor: pointer;
+}
+
+.navbar-menu .burger-menu span {
+  display: block;
+  width: 35px;
+  height: 3px;
+  background: #ffffff;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  border-radius: 30px;
+  margin-left: auto;
+  margin-bottom: 4px;
+}
+
+.navbar-menu .burger-menu span:nth-child(3) {
+  margin-bottom: 0;
+  width: 28px;
+  margin-left: auto;
+}
+
+.navbar-menu .burger-menu:hover span:nth-child(3) {
+  width: 35px;
+}
+
+/*================================================
+Main Banner CSS
+=================================================*/
+.main-banner {
+  position: relative;
+  z-index: 1;
+  height: 100vh;
+  overflow: hidden;
+  background-image: url(../img/main-bg.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.main-banner::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-image: url(../img/white-shape.png);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.main-banner .container {
+  position: relative;
+}
+
+.main-banner-content {
+  max-width: 608px;
+}
+
+.main-banner-content h1 {
+  margin-bottom: 0;
+  color: #ffffff;
+  line-height: 1;
+  font-size: 90px;
+  font-weight: 700;
+}
+
+.main-banner-content p {
+  color: #ffffff;
+  line-height: 1.9;
+  font-size: 15px;
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+
+.main-banner-content .newsletter-form {
+  position: relative;
+  margin-top: 35px;
+  max-width: 450px;
+}
+
+.main-banner-content .newsletter-form .input-newsletter {
+  display: block;
+  width: 68%;
+  border: none;
+  color: #ffffff;
+  height: 55px;
+  padding-left: 15px;
+  border-radius: 5px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: 0;
+  background-color: rgba(255, 255, 255, 0.25);
+  font-family: "Dosis", sans-serif;
+  font-weight: 600;
+}
+
+.main-banner-content .newsletter-form .input-newsletter::-webkit-input-placeholder {
+  color: #aeaeae;
+}
+
+.main-banner-content .newsletter-form .input-newsletter:-ms-input-placeholder {
+  color: #aeaeae;
+}
+
+.main-banner-content .newsletter-form .input-newsletter::-ms-input-placeholder {
+  color: #aeaeae;
+}
+
+.main-banner-content .newsletter-form .input-newsletter::placeholder {
+  color: #aeaeae;
+}
+
+.main-banner-content .newsletter-form button {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 55px;
+  line-height: 55px;
+  outline: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background-color: #fe8f02;
+  color: #ffffff;
+  border: none;
+  padding: 0 30px;
+  text-transform: uppercase;
+  letter-spacing: .5px;
+  border-radius: 5px;
+  font-family: "Dosis", sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.main-banner-content .newsletter-form button:hover {
+  color: #fe8f02;
+  background-color: #ffffff;
+}
+
+.main-banner-content .newsletter-form #validator-newsletter {
+  color: #ffffff;
+  position: absolute;
+  left: 0;
+  bottom: -30px;
+  color: #ffffff;
+  font-family: "Dosis", sans-serif;
+}
+
+.countdown-timer {
+  position: absolute;
+  right: 60px;
+  bottom: -150px;
+  text-align: center;
+  background-color: #fe8f02;
+  border-radius: 50%;
+  width: 370px;
+  height: 370px;
+}
+
+.countdown-timer h3 {
+  margin-bottom: 0;
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: 700;
+  font-family: "Dosis", sans-serif;
+}
+
+.countdown-timer .inner-content {
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.countdown-timer #timer {
+  margin-top: 15px;
+  font-family: "Dosis", sans-serif;
+}
+
+.countdown-timer #timer div {
+  display: inline-block;
+  color: #ffffff;
+  position: relative;
+  z-index: 1;
+  margin-left: 15px;
+  margin-right: 15px;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.countdown-timer #timer div span {
+  display: block;
+  margin-top: -5px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.countdown-timer #timer div::before {
+  content: ':';
+  position: absolute;
+  right: -23px;
+  top: -6px;
+  font-size: 40px;
+}
+
+.countdown-timer #timer div:last-child {
+  margin-right: 0;
+}
+
+.countdown-timer #timer div:last-child::before {
+  display: none;
+}
+
+.countdown-timer #timer div:first-child {
+  margin-left: 0;
+}
+
+/*================================================
+Sidebar Modal CSS
+=================================================*/
+.sidebar-modal {
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 99999;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  overflow: hidden;
+}
+
+.sidebar-modal .sidebar-modal-inner {
+  position: absolute;
+  right: -100%;
+  top: 0;
+  width: 40%;
+  overflow-y: scroll;
+  height: 100%;
+  background-color: #ffffff;
+  -webkit-transition: .7s;
+  transition: .7s;
+  z-index: 1;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+.sidebar-modal .sidebar-modal-inner .close-btn {
+  display: inline-block;
+  position: absolute;
+  right: 35px;
+  top: 20px;
+  font-size: 25px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  color: #000000;
+  opacity: .66;
+  cursor: pointer;
+}
+
+.sidebar-modal .sidebar-modal-inner .close-btn:hover {
+  opacity: 1;
+}
+
+.sidebar-modal .about-area {
+  margin-bottom: 40px;
+}
+
+.sidebar-modal .about-area .title h2 {
+  margin-bottom: 0;
+  font-size: 28px;
+  font-weight: 700;
+  font-family: "Dosis", sans-serif;
+}
+
+.sidebar-modal .about-area .title p {
+  font-size: 14px;
+  margin-top: 12px;
+  line-height: 1.7;
+  color: #333333;
+}
+
+.sidebar-modal .contact-area .title {
+  margin-bottom: 25px;
+}
+
+.sidebar-modal .contact-area .title h2 {
+  margin-bottom: 0;
+  font-size: 28px;
+  font-weight: 700;
+  font-family: "Dosis", sans-serif;
+}
+
+.sidebar-modal .contact-area .contact-form {
+  max-width: 500px;
+}
+
+.sidebar-modal .contact-area .contact-form form .form-group {
+  margin-bottom: 15px;
+}
+
+.sidebar-modal .contact-area .contact-form form .form-control {
+  height: 45px;
+  border: none;
+  -webkit-box-shadow: 0 5px 28.5px 1.5px rgba(149, 152, 200, 0.15);
+          box-shadow: 0 5px 28.5px 1.5px rgba(149, 152, 200, 0.15);
+  background-color: #ffffff;
+  font-size: 13.5px;
+  padding-left: 15px;
+  color: #000000;
+}
+
+.sidebar-modal .contact-area .contact-form form textarea.form-control {
+  height: auto;
+  padding-top: 10px;
+}
+
+.sidebar-modal .contact-area .contact-form form button {
+  margin-top: 10px;
+  border: none;
+  background-color: #000000;
+  outline: 0;
+  color: #ffffff;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  border-radius: 30px;
+  -webkit-box-shadow: 0 5px 28.5px 1.5px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 5px 28.5px 1.5px rgba(0, 0, 0, 0.3);
+  font-family: "Dosis", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 10px;
+  padding-bottom: 11px;
+}
+
+.sidebar-modal .contact-area .contact-form form button:hover {
+  color: #ffffff;
+  background-color: #fe8f02;
+}
+
+.sidebar-modal .contact-area .contact-form form .help-block ul {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style-type: none;
+}
+
+.sidebar-modal .contact-area .contact-form form .help-block.with-errors ul {
+  color: red;
+  margin-top: 7px;
+  font-size: 14px;
+}
+
+.sidebar-modal .contact-area .contact-form form #msgSubmit {
+  margin-bottom: 0;
+  font-size: 20px;
+}
+
+.sidebar-modal .contact-area .contact-form form #msgSubmit.text-danger {
+  margin-top: 8px;
+}
+
+.sidebar-modal .contact-area .contact-form form #msgSubmit.text-success {
+  margin-top: 8px;
+}
+
+.sidebar-modal .contact-area .contact-info {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.sidebar-modal .contact-area .contact-info .contact-info-content h3 {
+  margin-bottom: 15px;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: "Dosis", sans-serif;
+}
+
+.sidebar-modal .contact-area .contact-info .contact-info-content h2 {
+  margin-bottom: 0;
+  font-size: 28px;
+  font-weight: 700;
+  font-family: "Dosis", sans-serif;
+}
+
+.sidebar-modal .contact-area .contact-info .contact-info-content h2 a {
+  display: inline-block;
+  color: #fe8f02;
+}
+
+.sidebar-modal .contact-area .contact-info .contact-info-content h2 a:hover {
+  color: #000000;
+}
+
+.sidebar-modal .contact-area .contact-info .contact-info-content h2 a:not(:first-child) {
+  color: #000000;
+}
+
+.sidebar-modal .contact-area .contact-info .contact-info-content h2 a:not(:first-child):hover {
+  color: #fe8f02;
+}
+
+.sidebar-modal .contact-area .contact-info .contact-info-content h2 span {
+  display: block;
+  color: #57647c;
+  margin-top: 8px;
+  margin-bottom: 2px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.sidebar-modal .contact-area .contact-info .contact-info-content .social {
+  padding-left: 0;
+  list-style-type: none;
+  margin-bottom: 0;
+  margin-top: 20px;
+}
+
+.sidebar-modal .contact-area .contact-info .contact-info-content .social li {
+  display: inline-block;
+  margin: 0 1px;
+}
+
+.sidebar-modal .contact-area .contact-info .contact-info-content .social li a {
+  width: 35px;
+  height: 35px;
+  line-height: 34px;
+  border: 1px solid #dadada;
+  border-radius: 50%;
+  color: #aba5a5;
+  display: block;
+}
+
+.sidebar-modal .contact-area .contact-info .contact-info-content .social li a i {
+  font-size: 14px;
+}
+
+.sidebar-modal .contact-area .contact-info .contact-info-content .social li a:hover {
+  color: #ffffff;
+  border-color: #fe8f02;
+  background-color: #fe8f02;
+}
+
+.sidebar-modal.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.sidebar-modal.active .sidebar-modal-inner {
+  right: 0;
+}
+
+/*================================================
+Footer CSS
+=================================================*/
+.footer-area {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+  z-index: 1;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.footer-area ul {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style-type: none;
+  font-family: "Dosis", sans-serif;
+}
+
+.footer-area ul li {
+  display: inline-block;
+  color: #ffffff;
+  margin-left: 1px;
+  margin-right: 1px;
+}
+
+.footer-area ul li span {
+  display: inline-block;
+  margin-right: 3px;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.footer-area ul li a {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  color: #ffffff;
+  border-radius: 50%;
+  background-color: transparent;
+  text-align: center;
+  line-height: 31px;
+  font-size: 12.5px;
+  border: 1px solid #716f6f;
+  position: relative;
+  z-index: 1;
+}
+
+.footer-area ul li a:hover {
+  background-color: #fe8f02;
+  color: #ffffff;
+  border-color: #fe8f02;
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,198 @@
+@media only screen and (max-width: 767px) {
+  .navbar-area {
+    padding-top: 20px;
+  }
+  .main-banner {
+    height: 100%;
+    padding-top: 190px;
+    padding-bottom: 100px;
+  }
+  .main-banner-content {
+    max-width: 100%;
+    text-align: center;
+  }
+  .main-banner-content h1 {
+    font-size: 40px;
+    line-height: 1.1;
+  }
+  .main-banner-content p {
+    font-size: 13px;
+    margin-top: 15px;
+  }
+  .main-banner-content .newsletter-form {
+    max-width: 100%;
+    margin-top: 30px;
+  }
+  .main-banner-content .newsletter-form .input-newsletter {
+    width: 100%;
+  }
+  .main-banner-content .newsletter-form button {
+    position: relative;
+    height: auto;
+    line-height: initial;
+    padding: 15px 30px;
+    font-size: 14px;
+    margin-top: 15px;
+  }
+  .main-banner-content .newsletter-form #validator-newsletter {
+    right: 0;
+  }
+  .countdown-timer {
+    position: relative;
+    right: 0;
+    bottom: 0;
+    width: 290px;
+    height: 290px;
+    text-align: center;
+    margin: 40px auto 0;
+  }
+  .countdown-timer h3 {
+    font-size: 20px;
+  }
+  .countdown-timer #timer div {
+    font-size: 35px;
+    margin-left: 6px;
+    margin-right: 6px;
+  }
+  .countdown-timer #timer div::before {
+    display: none;
+  }
+  .countdown-timer #timer div span {
+    font-size: 14px;
+    margin-top: -3px;
+  }
+  .sidebar-modal .sidebar-modal-inner {
+    width: 100%;
+    padding: 30px;
+  }
+  .sidebar-modal .sidebar-modal-inner .close-btn {
+    right: 20px;
+    top: 14px;
+    font-size: 20px;
+  }
+  .sidebar-modal .about-area {
+    margin-bottom: 30px;
+  }
+  .sidebar-modal .about-area .title h2 {
+    font-size: 20px;
+  }
+  .sidebar-modal .about-area .title p {
+    font-size: 13px;
+    margin-top: 10px;
+    line-height: 1.8;
+  }
+  .sidebar-modal .contact-area .title {
+    margin-bottom: 20px;
+  }
+  .sidebar-modal .contact-area .title h2 {
+    font-size: 20px;
+  }
+  .sidebar-modal .contact-area .contact-form {
+    max-width: 100%;
+  }
+  .sidebar-modal .contact-area .contact-info {
+    margin-top: 35px;
+  }
+  .sidebar-modal .contact-area .contact-info .contact-info-content h3 {
+    font-size: 17px;
+    line-height: 1.4;
+  }
+  .sidebar-modal .contact-area .contact-info .contact-info-content h2 {
+    font-size: 22px;
+  }
+  .sidebar-modal .contact-area .contact-info .contact-info-content h2 span {
+    font-size: 13px;
+  }
+  .footer-area {
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .main-banner-content {
+    max-width: 100%;
+    text-align: center;
+  }
+  .main-banner-content h1 {
+    font-size: 40px;
+    line-height: 1.1;
+  }
+  .main-banner-content p {
+    font-size: 13px;
+    margin-top: 15px;
+  }
+  .main-banner-content .newsletter-form button {
+    position: absolute;
+    height: 55px;
+    line-height: 55px;
+    padding: 0 30px;
+    font-size: 14px;
+    margin-top: 0;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .sidebar-modal .sidebar-modal-inner {
+    width: 85%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .sidebar-modal .about-area .title h2 {
+    font-size: 24px;
+  }
+  .sidebar-modal .contact-area .title h2 {
+    font-size: 24px;
+  }
+  .main-banner-content {
+    margin-top: -70px;
+  }
+  .main-banner-content h1 {
+    font-size: 60px;
+  }
+  .main-banner-content p {
+    margin-top: 14px;
+  }
+  .main-banner-content .newsletter-form {
+    margin-top: 25px;
+  }
+  .countdown-timer {
+    right: 0;
+    bottom: -265px;
+    width: 300px;
+    height: 300px;
+  }
+  .countdown-timer h3 {
+    font-size: 23px;
+  }
+  .countdown-timer #timer {
+    margin-top: 10px;
+  }
+  .countdown-timer #timer div {
+    font-size: 35px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .countdown-timer #timer div::before {
+    display: none;
+  }
+  .countdown-timer #timer div span {
+    font-size: 15px;
+    margin-top: -3px;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .sidebar-modal .sidebar-modal-inner {
+    width: 60%;
+  }
+  .main-banner-content h1 {
+    font-size: 67px;
+  }
+  .countdown-timer {
+    right: 0;
+    bottom: -200px;
+  }
+}
+/*# sourceMappingURL=responsive.css.map */
